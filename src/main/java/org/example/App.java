@@ -1,8 +1,8 @@
 package org.example;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
-
-public class App 
+public class App
 {
     public static void main( String[] args )
     {
@@ -46,12 +46,15 @@ public class App
         food.price=5;
         food.stock=true;
         food.quantity=10;
+        food.expDate= new Date(02,03,2021);
+
 
         Food veggies =new Food();
         veggies.name="Carrots";
         veggies.price=3;
         veggies.quantity=20;
         veggies.stock=true;
+        veggies.expDate =new Date(07,07,2020);
 
         Vet vet=new Vet();
         vet.name="Jody";
@@ -95,20 +98,26 @@ public class App
         riding.duration=120;
         riding.playToy=saddle;
 
+        CareSupplies brush= new CareSupplies();
+        brush.name="Brush";
+        brush.price=10;
+        brush.purpose="Grooming";
+        brush.quantity=5;
+        brush.storeName="Pets4ever";
+
+        CareSupplies shampoo=new CareSupplies();
+        shampoo.name="PetShampoo";
+        shampoo.price=7;
+        shampoo.purpose="Washing animal hair";
+        shampoo.quantity=3;
+        shampoo.storeName="Pets4ever";
+
+
 
         Game game=new Game();
         game.adopter=person1;
         game.animal=dog;
         game.vet=vet;
-
-
-
-
-
-
-
-
-
 
 
     }
