@@ -2,6 +2,6 @@ package org.example;
 
 public class Game {
     Adopter adopter;
-    Animal dog;
+    Animal animal;
     Vet vet;
 }
