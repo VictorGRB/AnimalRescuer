@@ -48,16 +48,16 @@ public class App
         person1.address="Queensland";
 
 
-        Food food =new Food();
-        food.name="Chow";
+        Food food =new Food("Chow");
+        //food.name="Chow";
         food.price=5;
         food.stock=true;
         food.quantity=10;
         food.expDate= new Date(02,03,2021);
 
 
-        Food veggies =new Food();
-        veggies.name="Carrots";
+        Food veggies =new Food("Carrots");
+        //veggies.name="Carrots";
         veggies.price=3;
         veggies.quantity=20;
         veggies.stock=true;
@@ -91,15 +91,15 @@ public class App
         saddle.squeaks=false;
         saddle.bouncy=false;
 
-        Activity activity =new Activity();
-        activity.name="Fetch";
+        Activity activity =new Activity("Fetch");
+        //activity.name="Fetch";
         activity.duration=30;
         activity.outside=true;
         activity.toyNeeded=true;
         activity.playToy= toy;
 
-        Activity riding =new Activity();
-        riding.name="Gallop";
+        Activity riding =new Activity("Gallop");
+        //riding.name="Gallop";
         riding.toyNeeded=true;
         riding.outside=true;
         riding.duration=120;

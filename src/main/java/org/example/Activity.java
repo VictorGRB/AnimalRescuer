@@ -7,5 +7,10 @@ public class Activity {
     Boolean toyNeeded;
     Toy playToy;
 
+    public Activity(String name){
+        this.name=name;
+
+    }
+
 
 }
