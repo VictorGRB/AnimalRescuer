@@ -7,124 +7,120 @@ public class App
     public static void main( String[] args )
     {
         Dog dog =new Dog();
-        dog.name = "Rex";
-        dog.age=5;
-        dog.health=9;
-        dog.hunger=4;
-        dog.spirit=8;
-        dog.favFood = "Biscuit";
-        dog.favActivity="Fetch";
-        dog.breed="Husky";
-        dog.hasTail=true;
-        dog.noisy=false;
-        dog.color="Grey";
-        dog.howlsAtMoon=false;
-        dog.barkIntensity=5;
+        dog.setName("Rex");
+        dog.setAge(5);
+        dog.setHealth(9);
+        dog.setHunger(4);
+        dog.setSpirit(8);
+        dog.setFavFood("Biscuit");
+        dog.setFavActivity("Fetch");
+        dog.setBreed("Husky");
+        dog.setHasTail(true);
+        dog.setNoisy(false);
+        dog.setColor("Grey");
+        dog.setHowlsAtMoon(false);
+        dog.setBarkIntensity(5);
 
         Horse horse =new Horse();
-        horse.name = "Thunder";
-        horse.age=15;
-        horse.health=8;
-        horse.hunger=7;
-        horse.spirit=9;
-        horse.favFood = "Carrot";
-        horse.favActivity="Gallop";
-        horse.breed="Frisian";
-        horse.hasTail=true;
-        horse.noisy=true;
-        horse.color="Black";
-        horse.hoovesClean=true;
-        horse.maneLength="long";
-        horse.tailLength="medium";
-        horse.ridingCompetitions=3;
-        horse.braidedMane=false;
+        horse.setName("Thunder");
+        horse.setAge(15);
+        horse.setHealth(8);
+        horse.setHunger(7);
+        horse.setSpirit(9);
+        horse.setFavFood("Carrot");
+        horse.setFavActivity("Gallop");
+        horse.setBreed("Frisian");
+        horse.setHasTail(true);
+        horse.setNoisy(true);
+        horse.setColor("Black");
+        horse.setHoovesClean(true);
+        horse.setManeLength("Long");
+        horse.setTailLength("Medium");
+        horse.setRidingCompetitions(3);
+        horse.setBraidedMane(false);
 
         Adopter person1=new Adopter();
-        person1.name="Maria";
-        person1.money=300;
-        person1.age=40;
-        person1.familyMembers=3;
-        person1.hasYard=true;
-        person1.address="Queensland";
+        person1.setName("Maria");
+        person1.setMoney(300);
+        person1.setAge(40);
+        person1.setFamilyMembers(3);
+        person1.setHasYard(true);
+        person1.setAddress("Queensland");
 
 
         Food food =new Food("Chow");
-        //food.name="Chow";
-        food.price=5;
-        food.stock=true;
-        food.quantity=10;
-        food.expDate= new Date(02,03,2021);
+        food.setPrice(5);
+        food.setStock(true);
+        food.setQuantity(10);
+        food.setExpDate(new Date(02,03,2021));
 
 
         Food veggies =new Food("Carrots");
-        //veggies.name="Carrots";
-        veggies.price=3;
-        veggies.quantity=20;
-        veggies.stock=true;
-        veggies.expDate =new Date(07,07,2020);
+        veggies.setPrice(3);
+        veggies.setQuantity(20);
+        veggies.setStock(true);
+        veggies.setExpDate(new Date(07,07,2020));
 
         Vet vet=new Vet();
-        vet.name="Jody";
-        vet.age=45;
-        vet.specilization="small animals";
-        vet.hasPractice=true;
-        vet.yearsExperience=20;
+        vet.setName("Jody");
+        vet.setAge(45);
+        vet.setSpecilization("Small Animals");
+        vet.setHasPractice(true);
+        vet.setYearsExperience(20);
 
         Vet secVet=new Vet();
-        secVet.name="Julie";
-        secVet.age=35;
-        secVet.yearsExperience=10;
-        secVet.hasPractice=true;
-        secVet.specilization="horses";
+        secVet.setName("Julie");
+        secVet.setAge(35);
+        secVet.setYearsExperience(10);
+        secVet.setHasPractice(true);
+        secVet.setSpecilization("Horses");
 
         Toy toy=new Toy();
-        toy.name="Ball";
-        toy.price=5;
-        toy.color="red";
-        toy.squeaks=false;
-        toy.bouncy=true;
+        toy.setName("Ball");
+        toy.setPrice(5);
+        toy.setColor("Red");
+        toy.setSqueaks(false);
+        toy.setBouncy(true);
 
         Toy saddle=new Toy();
-        saddle.name="English Saddle";
-        saddle.price = 300;
-        saddle.color="brown";
-        saddle.squeaks=false;
-        saddle.bouncy=false;
+        saddle.setName("English Saddle");
+        saddle.setPrice(300);
+        saddle.setColor("Brown");
+        saddle.setSqueaks(false);
+        saddle.setBouncy(false);
 
         Activity activity =new Activity("Fetch");
-        //activity.name="Fetch";
-        activity.duration=30;
-        activity.outside=true;
-        activity.toyNeeded=true;
-        activity.playToy= toy;
+        activity.setDuration(30);
+        activity.setOutside(true);
+        activity.setToyNeeded(true);
+        activity.setPlayToy(toy);
 
         Activity riding =new Activity("Gallop");
-        //riding.name="Gallop";
-        riding.toyNeeded=true;
-        riding.outside=true;
-        riding.duration=120;
-        riding.playToy=saddle;
+        riding.setToyNeeded(true);
+        riding.setOutside(true);
+        riding.setDuration(120);
+        riding.setPlayToy(saddle);
 
         CareSupplies brush= new CareSupplies();
-        brush.name="Brush";
-        brush.price=10;
-        brush.purpose="Grooming";
-        brush.quantity=5;
-        brush.storeName="Pets4ever";
+        brush.setName("Brush");
+        brush.setPrice(10);
+        brush.setPurpose("Grooming");
+        brush.setQuantity(5);
+        brush.setStoreName("Pets4ever");
 
         CareSupplies shampoo=new CareSupplies();
-        shampoo.name="PetShampoo";
-        shampoo.price=7;
-        shampoo.purpose="Washing animal hair";
-        shampoo.quantity=3;
-        shampoo.storeName="Pets4ever";
+        shampoo.setName("Petshampoo");
+        shampoo.setPrice(7);
+        shampoo.setPurpose("Washing animal hair");
+        shampoo.setQuantity(3);
+        shampoo.setStoreName("Pets4ever");
 
 
 
         Game game=new Game();
-        game.adopter=person1;
-        game.animal=dog;
-        game.vet=vet;
+        game.setAdopter(person1);
+        game.setAnimal(dog);
+        game.setVet(vet);
 
 
     }

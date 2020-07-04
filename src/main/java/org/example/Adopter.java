@@ -2,9 +2,40 @@ package org.example;
 
 public class Adopter extends Person {
 
-    int money;
-    String address;
-    Boolean hasYard;
-    int familyMembers;
+    private int money;
+    private String address;
+    private Boolean hasYard;
+    private int familyMembers;
 
+    public int getMoney() {
+        return money;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public Boolean getHasYard() {
+        return hasYard;
+    }
+
+    public void setHasYard(Boolean hasYard) {
+        this.hasYard = hasYard;
+    }
+
+    public int getFamilyMembers() {
+        return familyMembers;
+    }
+
+    public void setFamilyMembers(int familyMembers) {
+        this.familyMembers = familyMembers;
+    }
 }
