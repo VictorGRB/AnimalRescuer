@@ -1,11 +1,10 @@
 package org.example;
 
-public class Adopter {
-    String name;
+public class Adopter extends Person {
+
     int money;
     String address;
     Boolean hasYard;
-    int age;
     int familyMembers;
 
 }

@@ -6,7 +6,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        Animal dog =new Animal();
+        Dog dog =new Dog();
         dog.name = "Rex";
         dog.age=5;
         dog.health=9;
@@ -18,8 +18,10 @@ public class App
         dog.hasTail=true;
         dog.noisy=false;
         dog.color="Grey";
+        dog.howlsAtMoon=false;
+        dog.barkIntensity=5;
 
-        Animal horse =new Animal();
+        Horse horse =new Horse();
         horse.name = "Thunder";
         horse.age=15;
         horse.health=8;
@@ -31,9 +33,14 @@ public class App
         horse.hasTail=true;
         horse.noisy=true;
         horse.color="Black";
+        horse.hoovesClean=true;
+        horse.maneLength="long";
+        horse.tailLength="medium";
+        horse.ridingCompetitions=3;
+        horse.braidedMane=false;
 
         Adopter person1=new Adopter();
-        person1.name="Steve";
+        person1.name="Maria";
         person1.money=300;
         person1.age=40;
         person1.familyMembers=3;

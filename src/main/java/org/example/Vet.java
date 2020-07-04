@@ -1,9 +1,8 @@
 package org.example;
 
-public class Vet {
-    String name;
+public class Vet extends Person{
+
     String specilization;
-    int age;
     Boolean hasPractice;
     int yearsExperience;
 }
