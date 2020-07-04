@@ -122,6 +122,10 @@ public class App
         game.setAnimal(dog);
         game.setVet(vet);
 
+        person1.feed(horse,veggies);
+        person1.activity(horse,riding);
+        person1.ride(person1,horse,riding);
+
 
     }
 }

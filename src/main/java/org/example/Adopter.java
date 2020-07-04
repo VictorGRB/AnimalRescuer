@@ -38,4 +38,10 @@ public class Adopter extends Person {
     public void setFamilyMembers(int familyMembers) {
         this.familyMembers = familyMembers;
     }
+    public void ride(Person person,Animal animal, Activity activity){
+        System.out.println(person.getName()+" just rode "+ animal.getName()+" and it was "+activity.getName()+".");
+    }
+
+
+
 }

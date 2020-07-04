@@ -19,4 +19,12 @@ public class Person {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public void feed(Animal animal,Food food){
+        System.out.println(this.name+" just gave "+animal.getName()+" "+food.getName()+" for eating.");
+    }
+
+    public void activity(Animal animal, Activity activity){
+        System.out.println(this.name+" just did the following activity with "+animal.getName()+":"+" "+activity.getName()+".");
+    }
 }
