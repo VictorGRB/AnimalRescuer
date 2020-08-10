@@ -20,4 +20,7 @@ public class Dog extends Animal {
     public void setHowlsAtMoon(Boolean howlsAtMoon) {
         this.howlsAtMoon = howlsAtMoon;
     }
+    public void Happy(){
+        System.out.println("The dog wags his tail in happiness.");
+    }
 }

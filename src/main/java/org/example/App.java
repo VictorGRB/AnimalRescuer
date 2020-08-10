@@ -4,9 +4,8 @@ import java.util.Date;
 
 public class App
 {
-    public static void main( String[] args )
-    {
-        Dog dog =new Dog();
+    public static void main( String[] args ) throws Exception {
+       /* Dog dog =new Dog();
         dog.setName("Rex");
         dog.setAge(5);
         dog.setHealth(9);
@@ -21,13 +20,14 @@ public class App
         dog.setHowlsAtMoon(false);
         dog.setBarkIntensity(5);
 
+
         Horse horse =new Horse();
         horse.setName("Thunder");
         horse.setAge(15);
         horse.setHealth(8);
         horse.setHunger(7);
         horse.setSpirit(9);
-        horse.setFavFood("Carrot");
+        horse.setFavFood("Carrots");
         horse.setFavActivity("Gallop");
         horse.setBreed("Frisian");
         horse.setHasTail(true);
@@ -38,6 +38,7 @@ public class App
         horse.setTailLength("Medium");
         horse.setRidingCompetitions(3);
         horse.setBraidedMane(false);
+
 
         Adopter person1=new Adopter();
         person1.setName("Maria");
@@ -117,7 +118,7 @@ public class App
 
 
 
-        Game game=new Game();
+
         game.setAdopter(person1);
         game.setAnimal(dog);
         game.setVet(vet);
@@ -125,6 +126,16 @@ public class App
         person1.feed(horse,veggies);
         person1.activity(horse,riding);
         person1.ride(person1,horse,riding);
+
+        Animal doggy =new Dog();
+        Animal horsey= new Horse();
+
+        horsey.Happy();
+        doggy.Happy();
+        game.start();*/
+
+        Game game=new Game();
+        game.start();
 
 
     }

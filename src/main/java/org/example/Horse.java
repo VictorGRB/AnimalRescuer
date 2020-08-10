@@ -47,4 +47,8 @@ public class Horse extends Animal{
     public void setRidingCompetitions(int ridingCompetitions) {
         this.ridingCompetitions = ridingCompetitions;
     }
+
+    public void Happy(){
+        System.out.println("The horse prances around in happiness.");
+    }
 }

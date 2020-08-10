@@ -100,4 +100,9 @@ public class Animal {
     public void setNoisy(Boolean noisy) {
         this.noisy = noisy;
     }
+
+    public void Happy(){
+        System.out.println("The animal is happy");
+
+    }
 }
