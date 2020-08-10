@@ -242,7 +242,7 @@ public class Game {
                     throw new RuntimeException("Game over. " + animal.getName() + " is too poorly entertained.");
                 }
 
-                System.out.println("Congratulations! " + animal.getName() + " has been fed and entertained well enough.");
+                System.out.println("Congratulations!" + animal.getName() + " has been fed and entertained well enough.");
             }
         }
 
